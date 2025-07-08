@@ -35,15 +35,16 @@ Whether you’re coding a DeFi protocol or an NFT marketplace, our SDKs save wee
 
 ---
 
-### 🚚 [Tx Dispatcher](https://github.com/TokensHive/tx-dispatcher)
+### 🚚 [Tx Dispatcher]
 
 > **Fast, reliable transaction dispatching to the Solana network**
 
 - High-performance transaction forwarding
 - WebSocket, HTTP, and gRPC support
+- Bi-directional transaction process, immediate status streaming on transaction receival
 - API-key based multi-tenant architecture
 - Built-in ACLs for IPs, CIDRs, and allowed domains
-- Supports tracking transaction status across multiple RPC nodes
+- Supports tracking transaction status across multiple RPC nodes and Shredsteam
 
 Tx Dispatcher ensures your transactions hit the Solana network quickly and reliably, even under heavy load.
 
