@@ -10,32 +10,33 @@ Welcome to **TokensHive**, an open-source hub where engineers and builders craft
 
 ### 🔑 [Hive Wallets](https://github.com/TokensHive/hive-wallets)
 
-> **Open-source Solana wallet generation & management**
+> **Encryption-first vanity Solana wallet generator (Go CLI)**
 
-- Fully typed SDK for Solana keypair generation
-- Deterministic derivation paths
-- Secure mnemonic handling
-- Hardware wallet support coming soon
-- Written in TypeScript & Rust
+- Generate Solana Ed25519 key-pairs that match comma-separated prefix/suffix filters (case-insensitive & 1337 look-alikes optional).
+- Multi-core brute-force engine with -workers and -timeout flags for full CPU control.
+- Outputs a single AES-256 OpenPGP–encrypted .json.gpg file—keys are unreadable without your pass-phrase.
+- Companion decrypt command to restore the clear JSON whenever you need it.
+- Written in Go, cross-compiles for macOS / Linux / Windows, released under the MIT license.
 
-Hive Wallets makes creating secure Solana wallets as easy as a single function call.
+Hive Wallets lets you craft custom Solana addresses and store them safely—all in one command.
 
 ---
 
-### ⚙️ SDKs for Solana & Web3
+### ⚙️ SDKs for Solana (Coming Soon)
 
 > **Plug-and-play libraries to supercharge dApp development**
 
-- Solana JSON RPC client SDKs
 - Web3 utility packages
-- Transaction builders and signers
-- Cross-chain tools under development
+- Instruction fees estimation
+- Priority fees precise calculation (DEX and writable addresses)
+- Multi DEX transaction and accounts parsers
+- Multi DEX transaction instruction builders
 
 Whether you’re coding a DeFi protocol or an NFT marketplace, our SDKs save weeks of development time while keeping your stack secure and scalable.
 
 ---
 
-### 🚚 [Tx Dispatcher]
+### 🚚 [Tx Dispatcher] (API Access only)
 
 > **Fast, reliable transaction dispatching to the Solana network**
 
@@ -52,7 +53,7 @@ Tx Dispatcher ensures your transactions hit the Solana network quickly and relia
 
 ## ✨ Why TokensHive?
 
-✅ **Open Source, Forever.**  
+✅ **Open Source SDKs and utilities.**  
 ✅ **Battle-tested code, written for performance.**  
 ✅ **Focused on developer experience and elegant APIs.**  
 ✅ **Active engineering team eager to collaborate.**
